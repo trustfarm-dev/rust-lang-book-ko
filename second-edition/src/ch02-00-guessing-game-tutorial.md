@@ -106,7 +106,7 @@ use std::io;
 명시적으로 그 타입을 가져와야 합니다. `std::io`는 사용자의 입력을 받는 것을
 포함하여 `io`와 관련된 기능들을 제공합니다.
 
-[prelude]: ../../std/prelude/index.html
+[prelude]:https://doc.rust-lang.org/std/prelude/index.html
 
 1장에서 보았듯이 `main` 함수는 프로그램의 진입점입니다.
 
@@ -248,7 +248,7 @@ io::stdin().read_line(&mut guess).expect("Failed to read line");
 결과값을 돌려주어 사용할 수 있도록 합니다. 이 경우 결과값은 사용자가 표준 입력으로 입력했던
 바이트의 개수입니다.
 
-[expect]: ../../std/result/enum.Result.html#method.expect
+[expect]: https://doc.rust-lang.org/std/result/enum.Result.html#method.expect
 
 만약 `expect`를 호출하지 않는다면 컴파일은 되지만 경고가 나타납니다.
 
@@ -712,7 +712,7 @@ Shadowing은 우리들이 `guess_str`과 `guess`처럼 고유의 변수명을
 `secret_number`와의 비교는 러스트가 `secret_number`의 타입을 `u32`로 유추해야
 함을 의미합니다. 이제 이 비교는 같은 타입의 두 값의 비교가 됩니다.
 
-[parse]: ../../std/primitive.str.html#method.parse
+[parse]: https://doc.rust-lang.org/std/primitive.str.html#method.parse
 
 `parse` 메소드의 호출은 에러가 발생하기 쉽습니다. 만약 `A👍%`과 같은 문자열이
 포함되어 있다면 정수로 바꿀 방법이 없습니다. "Result 타입으로 잠재된 실패 다루기"에서
